@@ -15,14 +15,13 @@ abstract contract PermissionsSetup is StdUtils, Test {
   Fungible tokenContract2;
   Transfer transferContract;
   Vault vaultContract;
-  address user;
-  address addr1;
-  address addr2;
   address recipientAddr;
   address constant TRANSFER_SIGNER = address(0x1);
   address constant SERVER_SIGNER = address(0x2);
   address constant FEE_CONTROLLER = address(0x3);
   address constant USER = address(0x4);
+  address constant USER2 = address(0x5);
+  address constant USER3 = address(0x6);
   uint256 constant TOKEN_MINT_SIZE = 1000 * 10**18;
   uint256 constant MAX_UINT = type(uint256).max;
 

@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import { PermissionsSetup } from "./PermissionsSetup.sol";
 
-contract TestPermissions is PermissionsSetup {
+contract TestDeploy is PermissionsSetup {
   function test_ApprovalForAll() public {
     vm.startPrank(USER);
     nftContract1.setApprovalForAll(address(transferContract), true);
