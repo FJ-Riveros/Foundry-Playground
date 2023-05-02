@@ -24,6 +24,9 @@ abstract contract PermissionsSetup is StdUtils, Test {
   address constant USER3 = address(0x6);
   uint256 constant TOKEN_MINT_SIZE = 1000 * 10**18;
   uint256 constant MAX_UINT = type(uint256).max;
+  uint8 EXACT_FEE = 100;
+  uint8 OVER_FEE = 101;
+  uint8 UNDER_FEE = 99;
 
   function setUp() public {
     address transferAddress = computeCreateAddress(
